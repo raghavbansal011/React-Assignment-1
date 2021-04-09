@@ -1,0 +1,25 @@
+.percentage {
+    margin: 0.5em 20em;
+    align-items: center;
+    display: flex;
+}
+
+.percentageButton {
+    padding: 8px 10px;
+    background-color:lightseagreen;
+    border-radius: 2%;
+    color: #193a29;
+    border: 1px solid #193a29;
+    width: 50%;
+}
+
+.percentageButton:hover {
+    background-color: #193a29;
+    color: white;
+    transition-duration: 200ms;
+}
+
+.percentageValue {
+    width: 50%;
+    text-align: center;
+}

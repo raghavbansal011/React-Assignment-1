@@ -1,23 +1,16 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
+import Skills from './components/Skills/skills';
+import Percentage from './components/Percentage/percentage';
 
+const skillRatings = { JavaScript: 0, HTML: 0, CSS: 0, React: 0 };
 function App() {
+  const [skillsState , updateSkillsState] = useState(skillRatings);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Skills updateSkillsState={updateSkillsState} skillsState={skillsState}/>
+      <Percentage skillsState={skillsState}/>
     </div>
   );
 }

@@ -1,0 +1,31 @@
+.skillName {
+    width: 50%;
+    text-align: center;
+}
+
+.skillRating {
+    width: 50%;
+    text-align: center;
+    display: flex;
+    vertical-align: middle;
+}
+
+.skillRating span {
+    font-size: 24px;
+    color: #3cb3b3;
+    font-weight: 600;
+}
+
+.skillRating span:hover {
+    cursor: pointer;
+    color: #193a29;
+    transition-duration: 300ms;
+}
+
+.arrow {
+    margin-top: -3px;
+}
+
+.remove {
+    display: none;
+}
